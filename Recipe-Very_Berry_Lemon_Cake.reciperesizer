@@ -1,0 +1,221 @@
+{
+  "recipes" : [
+    {
+      "recipe" : {
+        "name" : "Very Berry Lemon Cake",
+        "description" : "A zesty lemon cake layered with creamy frosting and loaded with fresh, juicy berries for a bright, flavorful treat.",
+        "category" : "Dessert",
+        "system" : "Imperial",
+        "servings" : {
+          "to" : 0,
+          "from" : 8
+        },
+        "times" : {
+          "total" : {
+            "hours" : 1,
+            "minutes" : 15
+          },
+          "cook" : {
+            "hours" : 1,
+            "minutes" : 0
+          },
+          "prep" : {
+            "hours" : 0,
+            "minutes" : 15
+          }
+        },
+        "source" : {
+          "author" : "Team Recipe Resizer",
+          "website" : "https:\/\/reciperesizer.com",
+          "image" : "",
+          "video" : "",
+          "link" : ""
+        },
+        "verification" : {
+          "verifiedID" : "",
+          "verifiedSignature" : "",
+          "verified" : false
+        },
+        "directions" : [
+          {
+            "steps" : [
+              "1. Preheat oven to 355 °F (180 °C).",
+              "2. Line the bottoms of two 9\" cake pans with parchment paper, no butter or oil needed.",
+              "3. Beat 7 eggs on high speed using the whisk attachment for a minute or two. With the mixer still running, gradually add 1 cup of sugar and continue beating until fluffy and thick, about 10 minutes."
+            ]
+          }
+        ],
+        "notes" : [
+
+        ],
+        "ingredients" : [
+          {
+            "quantity" : "7",
+            "sequence" : 1,
+            "measurementUnit" : "Each",
+            "quantityRange" : "",
+            "resizedSequence" : 0,
+            "measurementType" : "Other",
+            "measurementUnitAbv" : "ech",
+            "type" : "O",
+            "name" : "large eggs"
+          },
+          {
+            "quantity" : "2",
+            "sequence" : 2,
+            "measurementUnit" : "Cups",
+            "quantityRange" : "",
+            "resizedSequence" : 0,
+            "measurementType" : "Dry",
+            "measurementUnitAbv" : "cup",
+            "type" : "O",
+            "name" : "sugar"
+          },
+          {
+            "quantity" : "1",
+            "sequence" : 3,
+            "measurementUnit" : "Cups",
+            "quantityRange" : "",
+            "resizedSequence" : 0,
+            "measurementType" : "Dry",
+            "measurementUnitAbv" : "cup",
+            "type" : "O",
+            "name" : "flour"
+          },
+          {
+            "quantity" : "2\/3",
+            "sequence" : 4,
+            "measurementUnit" : "Teaspoons",
+            "quantityRange" : "",
+            "resizedSequence" : 0,
+            "measurementType" : "Dry",
+            "measurementUnitAbv" : "tsp",
+            "type" : "O",
+            "name" : "baking powder"
+          },
+          {
+            "quantity" : "8",
+            "sequence" : 5,
+            "measurementUnit" : "Ounces",
+            "quantityRange" : "",
+            "resizedSequence" : 0,
+            "measurementType" : "Dry",
+            "measurementUnitAbv" : "oz",
+            "type" : "O",
+            "name" : "cream cheese"
+          },
+          {
+            "quantity" : "3\/4",
+            "sequence" : 6,
+            "measurementUnit" : "Cups",
+            "quantityRange" : "",
+            "resizedSequence" : 0,
+            "measurementType" : "Dry",
+            "measurementUnitAbv" : "cup",
+            "type" : "O",
+            "name" : "butter"
+          },
+          {
+            "quantity" : "12",
+            "sequence" : 7,
+            "measurementUnit" : "Fluid Ounces",
+            "quantityRange" : "",
+            "resizedSequence" : 0,
+            "measurementType" : "Liquid",
+            "measurementUnitAbv" : "fl oz",
+            "type" : "O",
+            "name" : "sweetened condensed milk"
+          },
+          {
+            "quantity" : "1",
+            "sequence" : 8,
+            "measurementUnit" : "Each",
+            "quantityRange" : "",
+            "resizedSequence" : 0,
+            "measurementType" : "Other",
+            "measurementUnitAbv" : "ech",
+            "type" : "O",
+            "name" : "lemon"
+          },
+          {
+            "quantity" : "1",
+            "sequence" : 9,
+            "measurementUnit" : "Pounds",
+            "quantityRange" : "",
+            "resizedSequence" : 0,
+            "measurementType" : "Dry",
+            "measurementUnitAbv" : "lb",
+            "type" : "O",
+            "name" : "strawberries"
+          },
+          {
+            "quantity" : "1",
+            "sequence" : 10,
+            "measurementUnit" : "Cups",
+            "quantityRange" : "",
+            "resizedSequence" : 0,
+            "measurementType" : "Dry",
+            "measurementUnitAbv" : "cup",
+            "type" : "O",
+            "name" : "cherries"
+          },
+          {
+            "quantity" : "1\/2",
+            "sequence" : 11,
+            "measurementUnit" : "Cups",
+            "quantityRange" : "",
+            "resizedSequence" : 0,
+            "measurementType" : "Dry",
+            "measurementUnitAbv" : "cup",
+            "type" : "O",
+            "name" : "blackberries"
+          },
+          {
+            "quantity" : "1",
+            "sequence" : 12,
+            "measurementUnit" : "Cups",
+            "quantityRange" : "",
+            "resizedSequence" : 0,
+            "measurementType" : "Dry",
+            "measurementUnitAbv" : "cup",
+            "type" : "O",
+            "name" : "blueberries"
+          },
+          {
+            "quantity" : "1",
+            "sequence" : 13,
+            "measurementUnit" : "Pinches",
+            "quantityRange" : "",
+            "resizedSequence" : 0,
+            "measurementType" : "Dry",
+            "measurementUnitAbv" : "pn",
+            "type" : "O",
+            "name" : "salt"
+          },
+          {
+            "quantity" : "4",
+            "sequence" : 14,
+            "measurementUnit" : "Fluid Ounces",
+            "quantityRange" : "",
+            "resizedSequence" : 0,
+            "measurementType" : "Liquid",
+            "measurementUnitAbv" : "fl oz",
+            "type" : "O",
+            "name" : "strawberry preserves"
+          },
+          {
+            "quantity" : "1",
+            "sequence" : 15,
+            "measurementUnit" : "Cups",
+            "quantityRange" : "",
+            "resizedSequence" : 0,
+            "measurementType" : "Liquid",
+            "measurementUnitAbv" : "fl cup",
+            "type" : "O",
+            "name" : "water"
+          }
+        ]
+      }
+    }
+  ]
+}
