@@ -1,4 +1,5 @@
 <!-- Begin README -->
+
 <div align="center">
     <a href="https://github.com/Night-Owl-Labs/Recipe-Resizer-File-Format" target="_blank">
         <img src="./docs/images/banner_large.png" />
@@ -132,6 +133,9 @@ The `.reciperesizer` file format is structured as a `JSON` object. It contains a
   ]
 }
 ```
+
+>[!NOTE]
+> You can find example `.reciperesizer` and `.json` files in the repository's [examples](examples) directory.
 
 ## Field Definitions
 
