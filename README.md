@@ -18,7 +18,7 @@
 
 ---------------
 
-<h1 align="center">Recipe Resizer File Format</h1>
+<h1 align="center">🧑‍🍳 🥕 Recipe Resizer File Format 🍅 🥬</h1>
 
 The `.reciperesizer` file is a proprietary file extension used by the **Recipe Resizer** app for importing and exporting recipes. These files are `JSON`-based and designed for easy sharing, syncing, and backup of recipe data within the app.
 
