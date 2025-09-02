@@ -303,9 +303,8 @@ This project is released under the terms of the **MIT License**, which permits u
     <a href="https://reciperesizer.com" target="_blank">
         <img src="./docs/images/icon-light-rounded.png" width="100" height="100"/>
     </a>
-</div>
-
-<div align="center">
+  <br>
+  <br>
     <a href="https://nightowllabs.io" target="_blank">
         <img src="./docs/images/footer.png" width="100" height="100"/>
     </a>
