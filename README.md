@@ -25,7 +25,6 @@ The **Recipe Resizer File Format** is a proprietary file type (`.reciperesizer` 
 <div align="center">
 <table>
     <tr>
-        <h3 align="center">Download Recipe Resizer on the Apple App Store</h3>
         <td align="center">
             <h3 align="center">Download Recipe Resizer on the Apple App Store</h3>
             <a href="https://apps.apple.com/app/id6450848695"><img src="./docs/images/download_app-white.svg#gh-dark-mode-only" width="200"></a>
