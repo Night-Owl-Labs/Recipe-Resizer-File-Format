@@ -31,10 +31,8 @@ The **Recipe Resizer File Format** is a proprietary file type (`.reciperesizer` 
                 <table>
                     <tr>
                         <td align="center">
-                            <a href="https://apps.apple.com/app/id6450848695"><img src="./docs/images/icon-dark-rounded.png#gh-dark-mode-only" width="100"></a>
-                            <a href="https://apps.apple.com/app/id6450848695"><img src="./docs/images/icon-light-rounded.png#gh-light-mode-only" width="100"></a>
-                            <br>
-                            <p><b>Recipe Resizer</b> is an iOS app used to manage and resize recipes</p>
+                            <a href="https://apps.apple.com/app/id6450848695"><img src="./docs/images/download_app-white.svg#gh-dark-mode-only" width="200"></a>
+                            <a href="https://apps.apple.com/app/id6450848695"><img src="./docs/images/download_app-black.svg#gh-light-mode-only" width="200"></a>
                         </td>
                     </tr>
                 </table>
@@ -300,6 +298,12 @@ This project is released under the terms of the **MIT License**, which permits u
 **Reference:** [Main Branch](https://github.com/Night-Owl-Labs/Recipe-Resizer-File-Format) <br>
 
 ---------------
+
+<div align="center">
+    <a href="https://reciperesizer.com" target="_blank">
+        <img src="./docs/images/icon-light-rounded.png" width="100" height="100"/>
+    </a>
+</div>
 
 <div align="center">
     <a href="https://nightowllabs.io" target="_blank">
