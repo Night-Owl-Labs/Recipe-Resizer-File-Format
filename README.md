@@ -32,7 +32,7 @@ The **Recipe Resizer File Format** is a proprietary file type (`.reciperesizer` 
                     <tr>
                         <td align="center">
                             <a href="https://apps.apple.com/app/id6450848695"><img src="./docs/images/download_app-white.svg#gh-dark-mode-only" width="200"></a>
-                            <a href="https://apps.apple.com/app/id6450848695"><img src="./docs/images/download_app-black.svg#gh-light-mode-only" width="200"></a>
+                            <!-- <a href="https://apps.apple.com/app/id6450848695"><img src="./docs/images/download_app-black.svg#gh-light-mode-only" width="200"></a> -->
                         </td>
                     </tr>
                 </table>
