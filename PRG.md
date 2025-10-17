@@ -15,7 +15,7 @@ This file is used to connect this repository to the **PRG** project categorizati
 **Repository Tier:** Silver <br>
 **Technology:** JSON, Swift, iOS <br>
 **Category:** Data Interchange Format <br>
-**Order:** 1 <br>
+**Order:** 6 <br>
 
 ## Parameters
 
