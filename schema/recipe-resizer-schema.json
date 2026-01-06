@@ -1,0 +1,205 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://reciperesizer.com/schema/current/recipe-resizer-schema.json",
+  "title": "Recipe Resizer Format File Schema",
+  "version": 1,
+  "type": "object",
+
+  "$defs": {
+    "categoryEnum": {
+      "type": "string",
+      "enum": [
+        "Chicken","Beef","Pork","Lamb","Game","Fish","Shellfish","Vegetable",
+        "Pasta","Soup","Bread","Dessert","Sauce","Beverage","Home","Unselected"
+      ]
+    },
+
+    "systemEnum": {
+      "type": "string",
+      "enum": ["Imperial","Metric","Combination","Unselected"]
+    },
+
+    "measurementTypeEnum": {
+      "type": "string",
+      "enum": ["Dry","Liquid","Other","Type"]
+    },
+
+    "measurementUnitEnum": {
+      "type": "string",
+      "enum": [
+        "Pinches","Dashes","Pounds",
+        "Teaspoons","Tablespoons","Ounces","Cups",
+        "Fluid Ounces","Pints","Quarts","Gallons",
+        "Milligrams","Grams","Kilograms",
+        "Milliliters","Liters","Kiloliters",
+        "Each","To Taste","For Garnish","For Serving","Unspecified","Section"
+      ]
+    },
+
+    "measurementUnitAbvEnum": {
+      "type": "string",
+      "enum": [
+        "pn","ds","tsp","tbsp","cup","oz","lb",
+        "fl tsp","fl tbsp","fl oz","fl cup",
+        "pt","qt","gal",
+        "mg","g","kg",
+        "mL","L","kL",
+        "ech","tt","fg","fs","na","sec"
+      ]
+    },
+
+    "timeHM": {
+      "type": "object",
+      "properties": {
+        "hours":   { "type": "integer", "minimum": 0 },
+        "minutes": { "type": "integer", "minimum": 0, "maximum": 59 }
+      },
+      "required": ["hours", "minutes"],
+      "additionalProperties": false
+    }
+  },
+
+  "properties": {
+    "recipes": {
+      "type": "array",
+      "minItems": 1,
+
+      "items": {
+        "type": "object",
+        "properties": {
+          "recipe": {
+            "type": "object",
+
+            "properties": {
+
+              "category": { "$ref": "#/$defs/categoryEnum" },
+              "system":   { "$ref": "#/$defs/systemEnum" },
+
+              "source": {
+                "type": "object",
+                "properties": {
+                  "author": { "type": "string", "maxLength": 120 },
+                  "website": { "type": "string" },
+                  "image":   { "type": "string", "maxLength": 1024 },
+                  "video":   { "type": "string", "maxLength": 1024 },
+                  "link":    { "type": "string", "maxLength": 1024 }
+                },
+                "additionalProperties": false
+              },
+
+              "directions": {
+                "type": "array",
+                "minItems": 1,
+                "items": {
+                  "type": "object",
+                  "properties": {
+                    "section": { "type": "string", "maxLength": 200 },
+                    "steps": {
+                      "type": "array",
+                      "minItems": 1,
+                      "items": { "type": "string", "maxLength": 1000 }
+                    }
+                  },
+                  "required": ["steps"],
+                  "additionalProperties": false
+                }
+              },
+
+              "times": {
+                "type": "object",
+                "properties": {
+                  "total": { "$ref": "#/$defs/timeHM" },
+                  "cook":  { "$ref": "#/$defs/timeHM" },
+                  "prep":  { "$ref": "#/$defs/timeHM" }
+                },
+                "additionalProperties": false
+              },
+
+              "notes": {
+                "type": "array",
+                "maxItems": 50,
+                "items": {
+                  "anyOf": [
+                    { "type": "string", "maxLength": 1000 },
+                    {
+                      "type": "object",
+                      "properties": {
+                        "steps": {
+                          "type": "array",
+                          "minItems": 1,
+                          "items": { "type": "string", "maxLength": 1000 }
+                        }
+                      },
+                      "required": ["steps"],
+                      "additionalProperties": false
+                    }
+                  ]
+                }
+              },
+
+              "verification": {
+                "type": "object",
+                "properties": {
+                  "verified":          { "type": "boolean" },
+                  "verifiedID":        { "type": "string", "maxLength": 128 },
+                  "verifiedSignature": { "type": "string", "maxLength": 1024 }
+                },
+                "additionalProperties": false
+              },
+
+              "ingredients": {
+                "type": "array",
+                "minItems": 1,
+                "items": {
+                  "type": "object",
+                  "properties": {
+                    "quantity":           { "type": "string", "maxLength": 32 },
+                    "sequence":           { "type": "integer", "minimum": 0 },
+                    "measurementUnit":    { "$ref": "#/$defs/measurementUnitEnum" },
+                    "quantityRange":      { "type": "string", "maxLength": 32 },
+                    "resizedSequence":    { "type": "integer", "minimum": 0 },
+                    "measurementType":    { "$ref": "#/$defs/measurementTypeEnum" },
+                    "measurementUnitAbv": { "$ref": "#/$defs/measurementUnitAbvEnum" },
+                    "type":               { "type": "string", "enum": ["O","R"] },
+                    "name":               { "type": "string", "minLength": 1, "maxLength": 200 }
+                  },
+                  "required": ["quantity", "name"],
+                  "additionalProperties": false
+                }
+              },
+
+              "description": {
+                "type": "string",
+                "maxLength": 2000
+              },
+
+              "name": {
+                "type": "string",
+                "minLength": 1,
+                "maxLength": 200
+              },
+
+              "servings": {
+                "type": "object",
+                "properties": {
+                  "to":   { "type": "integer", "minimum": 0 },
+                  "from": { "type": "integer", "minimum": 0 }
+                },
+                "required": ["to", "from"],
+                "additionalProperties": false
+              }
+            },
+
+            "required": ["name", "ingredients"],
+            "additionalProperties": false
+          }
+        },
+        "required": ["recipe"],
+        "additionalProperties": false
+      }
+    }
+  },
+
+  "required": ["recipes"],
+  "additionalProperties": false
+}

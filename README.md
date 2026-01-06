@@ -52,6 +52,7 @@ The **Recipe Resizer File Format** is a proprietary file type (`.reciperesizer` 
         - [Notes](#notes)
 - [Importing](#importing)
 - [Exporting](#exporting)
+- [Schema](#schema)
 - [Why Use This File Format?](#why-use-this-file-format)
 - [Developer Notes](#developer-notes)
 - [Disclaimer](#disclaimer)
@@ -256,6 +257,10 @@ Below is a summary of the file structure and field definitions used in the file.
 3. Choose **Recipe Resizer File Format**.
 4. The file will be saved and ready to share or back up.
 
+## Schema
+
+The JSON Schema for the `.reciperesizer` file format can be found in the [schema](schema) directory of this repository. This schema defines the structure, required fields, and data types for validating `.reciperesizer` files.
+
 ## Why Use This File Format?
 
 - **Portable**: Encapsulates all recipe details in a single file.
@@ -269,6 +274,10 @@ While the `.reciperesizer` format is proprietary, it uses standard `JSON` syntax
 
 > [!WARNING]
 > Modifying the contents of a verified recipe without recalculating a valid signature may result in the file being treated as unverified or rejected upon import.
+
+The **Recipe Resizer File Format** is designed for use with the **Recipe Resizer** app. Developers interested in integrating support for this format into their own applications should refer to the field definitions provided above to ensure compatibility.
+
+An example use case of this file is the **Recipe Resizer AI Assistant**, which can read and write recipes in this format to facilitate recipe generation and modification. Visit the [Recipe Resizer AI Assistant](https://chatgpt.com/g/g-69069aa3a3408191b0904ff19653e4d9-recipe-resizer-ai-assistant) on ChatGPT for more information.
 
 ## Disclaimer
 
