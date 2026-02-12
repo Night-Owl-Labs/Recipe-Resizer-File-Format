@@ -55,6 +55,7 @@ The **Recipe Resizer File Format** is a proprietary file type (`.reciperesizer` 
 - [Schema](#schema)
 - [Why Use This File Format?](#why-use-this-file-format)
 - [Developer Notes](#developer-notes)
+- [Resources](#resources)
 - [Disclaimer](#disclaimer)
 - [License](#license)
 - [Credits](#credits)
@@ -252,7 +253,7 @@ Below is a summary of the file structure and field definitions used in the file.
 
 *To export a recipe to a `.reciperesizer` file:*
 
-1. Select the recipe you want to export.
+1. Hold down the recipe you want to export.
 2. Tap **Export**.
 3. Choose **Recipe Resizer File Format**.
 4. The file will be saved and ready to share or back up.
@@ -260,6 +261,8 @@ Below is a summary of the file structure and field definitions used in the file.
 ## Schema
 
 The JSON Schema for the `.reciperesizer` file format can be found in the [schema](schema) directory of this repository. This schema defines the structure, required fields, and data types for validating `.reciperesizer` files.
+
+You can use this online schema validator [here](https://www.jsonschemavalidator.net/) and paste the [schema file](./schema/recipe-resizer-schema.json) and your `.reciperesizer` file into it in order to validate that it conforms to the schema.
 
 ## Why Use This File Format?
 
@@ -279,6 +282,15 @@ The **Recipe Resizer File Format** is designed for use with the **Recipe Resizer
 
 An example use case of this file is the **Recipe Resizer AI Assistant**, which can read and write recipes in this format to facilitate recipe generation and modification. Visit the [Recipe Resizer AI Assistant](https://chatgpt.com/g/g-69069aa3a3408191b0904ff19653e4d9-recipe-resizer-ai-assistant) on ChatGPT for more information.
 
+## Resources
+
+- **Recipe Resizer iOS App:** [https://apps.apple.com/app/id6450848695](https://apps.apple.com/app/id6450848695)
+- **Recipe Resizer App Website:** [https://reciperesizer.com](https://reciperesizer.com)
+- **Recipe Resizer Help Center:** [https://help.reciperesizer.com](https://reciperesizer.com)
+- **Recipe Resizer Help Center - For Develpers:** [https://help.reciperesizer.com/b/5DA5195A-C48A-4D93-BBF9-4A4994847EFE/For-Developers](https://help.reciperesizer.com/b/5DA5195A-C48A-4D93-BBF9-4A4994847EFE/For-Developers)
+- **Recipe Resizer AI Assistant:** [(https://chatgpt.com/g/g-69069aa3a3408191b0904ff19653e4d9-recipe-resizer-ai-assistant](https://chatgpt.com/g/g-69069aa3a3408191b0904ff19653e4d9-recipe-resizer-ai-assistant)
+- **JSON Schema Validator:** [https://www.jsonschemavalidator.net/](https://www.jsonschemavalidator.net/)  
+
 ## Disclaimer
 
 The `.reciperesizer` format is the intellectual property of **Night Owl Labs, LLC**. It is designed solely for use with the **Recipe Resizer** app. Compatibility with third-party applications is not officially supported but can be developed by you if .
@@ -293,10 +305,10 @@ This project is released under the terms of the **MIT License**, which permits u
 
 ## Credits
 
-**Author:** [Scott Grivner](https://github.com/scottgriv) <br>
-**Email:** [scott.grivner@gmail.com](mailto:scott.grivner@gmail.com) <br>
-**Website:** [scottgrivner.dev](https://www.scottgrivner.dev) <br>
-**Reference:** [Main Branch](https://github.com/Night-Owl-Labs/Recipe-Resizer-File-Format) <br>
+**Author:** [Night Owl Labs, LLC.](https://github.com/Night-Owl-Labs) <br>
+**Email:** [support@nightowllabs.io](mailto:support@nightowllabs.io) <br>
+**Website:** [nightowllabs.io](https://www.nightowllabs.io) <br>
+**Reference:** [Main Branch](https://github.com/scottgriv/Night-Owl-Labs-Website) <br>
 
 ---------------
 
