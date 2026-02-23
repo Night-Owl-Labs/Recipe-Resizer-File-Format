@@ -2,7 +2,7 @@
 
 <div align="center">
     <a href="https://github.com/Night-Owl-Labs/Recipe-Resizer-File-Format" target="_blank">
-        <img src="./docs/images/icon.png" width="150" height="181" />
+        <img src="./docs/images/icon-rounded.png" width="150" height="150" />
     </a>
 </div>
 <br>
@@ -53,6 +53,7 @@ The **Recipe Resizer File Format** is a proprietary file type (`.reciperesizer` 
 - [Importing](#importing)
 - [Exporting](#exporting)
 - [Schema](#schema)
+- [File Thumbnail](#file-thumbnail)
 - [Why Use This File Format?](#why-use-this-file-format)
 - [Developer Notes](#developer-notes)
 - [Resources](#resources)
@@ -202,7 +203,7 @@ Below is a summary of the file structure and field definitions used in the file.
 ### Verification
 
 > [!NOTE]
-> This section is for **Team Recipe Resizer** created recipes. It is not used for user-generated recipes.
+> This section is for **Team Recipe Resizer** created recipes. It is not used for user-generated recipes but are required fields.
 
 | Field Path                              | Type             | Description |
 |-----------------------------------------|------------------|-------------|
@@ -236,7 +237,8 @@ Below is a summary of the file structure and field definitions used in the file.
 
 | Field Path                              | Type             | Description |
 |-----------------------------------------|------------------|-------------|
-| `recipe.notes[]`                       | Array of Strings | Freeform notes. |
+| `recipe.notes[]`                       | Array of Objects | Groups of steps. |
+| `recipe.notes[]`                       | Array of Strings | List of notes. |
 
 ## Importing
 
@@ -264,6 +266,14 @@ The JSON Schema for the `.reciperesizer` file format can be found in the [schema
 
 You can use this online schema validator [here](https://www.jsonschemavalidator.net/) and paste the [schema file](./schema/recipe-resizer-schema.json) and your `.reciperesizer` file into it in order to validate that it conforms to the schema.
 
+The schema can also be found embedded in our website at [https://reciperesizer.com/schema/current/recipe-resizer-schema.json](https://reciperesizer.com/schema/current/recipe-resizer-schema.json).
+
+## File Thumbnail
+
+When a `.reciperesizer` file is saved to an iOS device running Recipe Resizer, the app associates the file extension with the following thumbnail that will appear in the Files app and other file browsers:
+
+<img src="./docs/images/thumbnail.png" width="150">
+
 ## Why Use This File Format?
 
 - **Portable**: Encapsulates all recipe details in a single file.
@@ -288,7 +298,6 @@ An example use case of this file is the **Recipe Resizer AI Assistant**, which c
 - **Recipe Resizer App Website:** [https://reciperesizer.com](https://reciperesizer.com)
 - **Recipe Resizer Help Center:** [https://help.reciperesizer.com](https://reciperesizer.com)
 - **Recipe Resizer Help Center - For Develpers:** [https://help.reciperesizer.com/b/5DA5195A-C48A-4D93-BBF9-4A4994847EFE/For-Developers](https://help.reciperesizer.com/b/5DA5195A-C48A-4D93-BBF9-4A4994847EFE/For-Developers)
-- **Recipe Resizer AI Assistant:** [(https://chatgpt.com/g/g-69069aa3a3408191b0904ff19653e4d9-recipe-resizer-ai-assistant](https://chatgpt.com/g/g-69069aa3a3408191b0904ff19653e4d9-recipe-resizer-ai-assistant)
 - **JSON Schema Validator:** [https://www.jsonschemavalidator.net/](https://www.jsonschemavalidator.net/)  
 
 ## Disclaimer
@@ -306,15 +315,15 @@ This project is released under the terms of the **MIT License**, which permits u
 ## Credits
 
 **Author:** [Night Owl Labs, LLC.](https://github.com/Night-Owl-Labs) <br>
-**Email:** [support@nightowllabs.io](mailto:support@nightowllabs.io) <br>
-**Website:** [nightowllabs.io](https://www.nightowllabs.io) <br>
-**Reference:** [Main Branch](https://github.com/scottgriv/Night-Owl-Labs-Website) <br>
+**Email:** [support@reciperesizer.com](mailto:support@reciperesizer.com) <br>
+**Website:** [reciperesizer.com](https://www.reciperesizer.com) <br>
+**Reference:** [Main Branch](https://github.com/Night-Owl-Labs/Recipe-Resizer-File-Format) <br>
 
 ---------------
 
 <div align="center">
     <a href="https://reciperesizer.com" target="_blank">
-        <img src="./docs/images/icon-light-rounded.png" width="100" height="100"/>
+        <img src="./docs/images/icon-rounded.png" width="100" height="100"/>
     </a>
   <br>
   <br>
